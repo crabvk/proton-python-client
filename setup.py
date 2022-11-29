@@ -1,11 +1,10 @@
 #!/usr/bin/env python
 
 from setuptools import setup, find_packages
-from proton.constants import VERSION
 
 setup(
     name="proton-client",
-    version=VERSION,
+    version="0.7.1",
     description="Proton Technologies API wrapper",
     author="Proton Technologies",
     author_email="contact@protonmail.com",
