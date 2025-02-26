@@ -44,7 +44,6 @@ class TLSPinningHTTPSConnectionPool(HTTPSConnectionPool):
             super(TLSPinningHTTPSConnectionPool, self).__init__(
                 host,
                 port,
-                strict,
                 timeout,
                 maxsize,
                 block,
@@ -58,6 +57,8 @@ class TLSPinningHTTPSConnectionPool(HTTPSConnectionPool):
                 key_password,
                 ca_certs,
                 ssl_version,
+                None,
+                None,
                 assert_hostname,
                 assert_fingerprint,
                 ca_cert_dir,
